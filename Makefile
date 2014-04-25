@@ -1,18 +1,5 @@
 #OBJ_DIR = ./
-HEADERS = src/Variant.h \
-		  src/split.h \
-		  src/join.h
-SOURCES = src/Variant.cpp \
-		  src/split.cpp
-OBJECTS= $(SOURCES:.cpp=.o)
-
-# TODO
-#vcfstats.cpp
-
-BIN_SOURCES = src/vcfecho.cpp \
-			  src/vcfaltcount.cpp \
-			  src/vcfhetcount.cpp \
-			  src/vcfhethomcount.cpp \
+src/vcfhethomcount.cpp \
 			  src/vcfhethomratio.cpp \
 			  src/vcffilter.cpp \
 			  src/vcf2tsv.cpp \
